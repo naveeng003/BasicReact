@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionHeader renders without error 1`] = `
+<h4
+  className="mb-3"
+>
+  test
+</h4>
+`;

@@ -14,11 +14,11 @@ class EmployeeForm extends React.Component {
       designation: '',
       salary: ''
     };
-    this.handleChange = this.handleChange.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event) {
+  handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
     this.setState({ [name]: value }, () => {
@@ -29,6 +29,13 @@ class EmployeeForm extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     console.log(this.state);
+  }
+
+  componentDidMount() {
+    console.log(this.props)
+    this.setState({
+      employeeId: this.props.match.params.employeeId
+    })
   }
 
   render() {

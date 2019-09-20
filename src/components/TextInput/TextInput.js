@@ -21,7 +21,7 @@ TextInput.defaultProps = {
   label: 'Text Input',
   labelFor: 'text input',
   showLabel: false,
-  value: 'Hello Text Input',
+  value: '',
   handleChange() {},
   id: 'input',
   name: 'input',
